@@ -1,0 +1,41 @@
+---
+layout: post
+title: 'AAA Toolbox: Story Slicing'
+categories:
+- Agilidade
+tags:
+- analise
+- agilidade
+- toolbox
+- anlise de sistemas
+- estrias
+- histrias de usurio
+- analista de negcios
+- dividindo
+- English
+status: publish
+type: post
+published: true
+meta: {}
+---
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p><em>Esse é um post de uma série que eu compartilhei internamente na ThoughtWorks uns anos atrás. Eu escrevi em inglês, então republico assim, mas se a série acabar sendo bem popular, eu prometo traduzir tudo. </em></p>
+  
+      <img src="/squarespace_images/static_531766e3e4b00113dae821dc_53177f8de4b0bf4d7353b49f_532772f5e4b0d79854843da7_1395094275843_AAAToolbox-Story-Slicing.jpeg_" alt="">
+  
+
+<p>When writing user stories, a business analyst should strive to write them in a way that an incremental improvement will be available to the user after the story is completed. This means that things like "save 'order' object to the database" or "place all the fields of a form on the screen" are generally not good stories. These examples represent work divided in layers (a data access layer, the web front end, etc.) and, therefore, do not provide the full implementation of a given improvement until all bits are complete.</p>
+<p>When divvying up stories, we should think of the way we slice a cake: a good slice should cut trough all the layers. This would include front end work, functional testing, validation, data persistence, performance testing and everything else necessary to present the user with a valuable piece of functionality. It is easier said than done! Many times it is hard to pin down beforehand which bits of functionality are essential to deliver business value, and frequently some bits are vital to more than one story, making it hard to know when to implement it.</p>
+<p>Some people have offered patterns to do it (for example, <a target="_blank" href="http://agilecoach.typepad.com/agile-coaching/2010/09/ideas-for-slicing-user-stories.html">here</a> and <a target="_blank" href="http://www.richardlawrence.info/2009/10/28/patterns-for-splitting-user-stories/">here</a>). They recommend splitting based on such aspects as operations (e.g.: CRUD - create, retrieve, update, delete), workflow steps (e.g.: each page of a wizard), business rules variation (e.g.: progressively adding flexibility or constraints to an action), major effort (e.g.: bundle all other variations together after the first of many similar features is implemented), data entry methods (e.g.: progressively fancier UI), platform support (e.g.: different mobile OS, older browsers), among others.</p>
+<p>These are helpful suggestions, still, in may cases, they don't seem to work! Business value cannot be realised without some of the steps of a workflow; Grouping similar stories creates dependency on that one chosen story, which cannot be de-scoped without causing havoc to your estimations; Data entry assumed simple proves a nightmare to stabilise; each operation is too complex to implement as a story; Progressive enhancements generate a chain of dependencies between stories; And so on... Trying to accommodate all this conflicting demands can end up pushing an analyst to settle with stories that are too big or don't cut that proverbial slices trough al layers.</p>
+<p>I've come to the conclusion that more often than not, you have to settle for stories that are somewhat imperfect, still there are some guidelines that can help make the tough decisions:</p>
+<ul>
+<li>Stories must be valuable, if there is no way to make the story small enough and keep the businesses value, keep the story as it is and break it down in tasks during development (for example, when creating a story to display an attribute on the screen, make sure to include minimum functionality to set the value of the attribute if it hasn't been implemented elsewhere);</li>
+<li>Identify the desired core of the functionality and make sure it slices all layers, so it is independent and the business value can be achieved as soon as it is played (for example, if you have to create a new page type, that can be browsed from different places on the site, have a story to create the page displaying real data and have it accessed from the address bar, leaving the references to the page across the site to separate stories);</li>
+<li>As long as the system is not broken, covering edge cases and loose ends can be split into separate stories, this will give an opportunity for the business to de-prioritise stories (for example, if editing a record is a straightforward task, have it first with generic error messages, and enhance it in future stories with error detection or active help to the user);</li>
+<li>Work closely with the developers to ensure that the proposed solution is complete and is the easiest technical solution. It is very easy overlook simple solutions to problems when trying to frame them in a generic-code agnostic language. It is common finding complex pieces of code available in open-source libraries. Sometimes hooking up to a well established library is easier than writing overly simplified solution;</li>
+<li>Avoid loading stories with functionality that is not absolutely necessary to fulfil the goal (for example, adding a created date to a record that you don't care about the created date. If developers what to do it as part of the implementation is fine, but unless it is necessary to fulfil the goal, defer it until it becomes relevant);</li>
+</ul>
+<p><span style="font-size:8pt"><em>Image adapted form original picture from </em></span><a target="_blank" href="http://www.flickr.com/photos/myrnalitt/"><span style="font-size:8pt"><em>Myrna Litt</em></span></a></p>
+</body></html>

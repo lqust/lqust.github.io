@@ -1,0 +1,34 @@
+---
+layout: post
+title: Épico pra que te quero
+categories:
+- Agilidade
+tags:
+- gil
+- picos
+- estrias
+- escopo
+- backlog
+- anlise de sistemas
+- analise
+- Modelo Indutivo
+- Modelo Gerativo
+status: publish
+type: post
+published: true
+meta: {}
+---
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<h3>O papel dos épicos na análise ágil</h3>
+<p>Quando o <a target="_blank" href="https://twitter.com/alklaser">Alexandre Klaser</a> e eu apresentamos <a target="_blank" href="http://slidesha.re/1lJC40E">Priorização por Objetivos</a> (que descreve um quadro aonde as colunas são hipóteses a ser testadas e as linhas são níveis de refinamento), muita gente pergunta qual o papel de épicos no quadro de objetivos. A verdade é que eles não tem papel algum.</p>
+<p>Talvez não seja para tanto, acredito que existam cenários aonde o conceito de épico faz sentido (como por exemplo quando se descobre que uma estória é grande demais - nesse caso, podemos a transformá-la em um épico até que ela seja dividida em estórias menores), mas não gosto da ideia de escrever épicos para depois dividi-los em estórias. Quando se faz isso, creio que se está partindo de um conjunto "preexistente" de funcionalidades, e o descrevendo em estórias. Para fazer isso, necessariamente devemos pressupor que esses requisitos já são conhecidos e só estamos colocando eles no papel. Gosto de chamar esse modelo de "Indutivo". Esse modelo parte de um problema, para uma solução imaginada para o problema, que é dividida em um conjunto de funcionalidades descrita por épicos, e esses épicos se tornam estórias.</p>
+<p>Problema  →  Solução  →  Funcionalidades  →  Épicos  →  Estórias  →  Software funcionando </p>
+<p>Essa sequência pressupõe que a solução para o problema é a que foi imaginada inicialmente e pressupõe que o software que representa essa solução (e portanto resolve o problema) será obtido quando todas as funcionalidades forem implementadas conforme descritas nos épicos (e por consequência, nas estórias). Até ai tudo bem, mas como vamos saber se todas as funcionalidades descritas são necessárias para prover a solução. E mais: Como temos tanta certeza que a solução imaginada de fato resolve o problema? E por fim, como o problema em questão se relaciona com os objetivos de negócio?</p>
+<p>O modelo indutivo é adequando em situações aonde o custo de mudar de ideia é alto, portanto se investe muito tempo especificando o que deve ser feito para ter certeza que a se fará a coisa certa. Por sorte, hoje em dia software não está limitado por isso (se é que algum dia esteve). Por outro lado, o modelo indutivo pode acarretar um aumento desordenado do escopo, pois como não se tem oportunidade de validar o quanto é o suficiente, acabamos acrescentando todas as funcionalidades que vão garantir que o problema será resolvido. Mesmo em equipes maduras, a consequência dessa análise anterior é um backlog cheio.</p>
+<h3>Gerativo vs. Indutivo</h3>
+<p>O que me parece é que o modelo Indutivo descreve o que deve ser feito em oposição ao resultado que se deseja obter, e com isso resulta em uma solução "fechada" que não deixa margem para descoberta e inovação. O que propomos quando falamos de Priorização por Objetivos é um modelo de análise "Gerativo". O modelo Gerativo busca fazer com que o objetivo de negócio "gere" as estórias para atendê-lo. Para isso, não assumimos que existe um problema a ser resolvido, <a target="_blank" href="http://www.thoughtworks.com/insights/blog/4-passos-para-melhoria-continua">mas levantamos hipóteses que acreditamos nos deixar mais próximos do objetivo do negócio</a>, assim:</p>
+<p>Objetivo  → Hipótese  →  Estórias  → Software funcionando</p>
+<p>A primeira coisa que se pode perceber é que este é um caminho mais curto para software funcionando. Isso não quer dizer que se entregaria o mesmo volume de estórias em menos tempo, mas apenas que o trabalho fica pronto em pedaços menores e a validação ante o objetivo em questão se dá mais rápido. Outro benefício é que se pressupõe muito pouco, uma vez que não imaginamos que exista uma solução correta.</p>
+<p>Alguém pode perguntar se utilizando este modelo algum dia entregaremos alguma funcionalidade desejada, uma vez que elas não são descritas formalmente. É impossível responder isso sem outra pergunta: Quem "desejava" aquela funcionalidade? O analista? O gerente? A única pessoa que pode legitimamente desejar algo do software, é o usuário final daquele software. A equipe de projeto só deveria desejar satisfazer este usuário, portanto qualquer funcionalidade "desejada" pela equipe de projeto é apenas a opinião de tal equipe a respeito do que atenderá a necessidade do usuário. Na minha experiência, não existe esforço de análise o suficiente para identificar isso. Software funcionando é a melhor medida de sucesso.</p>
+</body></html>
