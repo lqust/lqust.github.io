@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Value Injection
+permalink: blog/2014/9/10/value-injection
 categories:
 - Agilidade
 tags:
@@ -24,23 +25,23 @@ meta: {}
 <h2>Start from the end</h2>
 <p>This is the idea that we should dig for the value of the features being discussed and try to look at the desired output in order to identify what needs to be done. It is not a new concept on itself, but it is something that I don't see done on a regular basis. To achieve that we can ask our clients "Why this is important to you" until we identify how this helps the client increase profit, reduce cost, protect revenue or fulfil the company's mission. It is not only a matter of continue to ask until we know exactly why the client wants a given feature (although it helps), but it means that when we identify the value, then we start to build from the output. For example:</p>
 <p>A client comes to us asking us to add mandatory gender and race fields in the employee records of their HR system. After questioning the reasons for this requirements we learn that this is necessary to so the company can report on average salaries for historically discriminated groups. Therefore we start by providing a way to output average salary for employees, identifying that race and gender should be attributes of employee and providing this additional calculation. In the process, we may realise, for instance, that gender information is already available in other systems in the organisation, and that the legal requirement for race requires only a self-reported attribute of "belong to racial minority", making the initial requirement for fields much simpler, and providing the actual solution to the problem instead.<br> <br>It looks like this is actually easier to apply if the customer starts by articulating the perceived required solution than if they start with the most "desirable" stance of articulation business value, because if you start by the stated business value, the success will depend on how well that was initially framed by the client.</p>
-  
+
       <img src="/squarespace_images/static_531766e3e4b00113dae821dc_53177f8de4b0bf4d7353b49f_54105be2e4b02a51b0026adb_1410358244027_Start+from+the+end.png_" alt="">
-  
+
 
 <h2>Flesh it out with examples</h2>
 <p>Whenever you are starting a new project, there are plenty of knowns, plenty of unknowns and without making them explicit, we are exposing ourselves to risk. Once we understand what is the problem that needs to be solved, we can use examples to stretch our understanding of the domain.</p>
 <p>For instance, in the example above, we may have a simple domain of employees. It looks awfully simple for a real-world problem, so we may inquiry who is responsible for achieving the diversity targets. The client promptly answers "the department managers, obviously", that would indicate we need to have a parent department for an employee and it should have at least one manager. We may continue to enquiry whether a department with no manager exists ("it doesn't", they tell us), if an employee is only assigned to one department at a time ("yes. An employee could be lent to another department, but it still counts on the original department average". We make a note and move on) and what about contractors ("Well.. contractors make it a bit more complicated...". Which prompt us to probe a little bit more on that).</p>
-  
+
       <img src="/squarespace_images/static_531766e3e4b00113dae821dc_53177f8de4b0bf4d7353b49f_54105bf6e4b02a51b0026b05_1410358264114__img.png" alt="">
-  
+
 
 <h2>Learn through criticism</h2>
 <p>The idea here is be even more minimalistic than the regular "very little upfront analysis" and actually get our hands dirty on a working skeleton even before we do any analysis at all. Maybe use Excel or ask a developer to put something really simple and very wrong together, so the client can look at it and criticise it. People usually have trouble with "blank canvases", but usually have no difficulty showing what exactly you did wrong. Leverage that in order to promote learning.</p>
 <p>When building this skeleton, focus on enabling the capability rather than making it look right. User experience will change with feedback, so delaying commitment to how it looks will keep the cost of changing the interface low until we settle on one.</p>
-  
+
       <img src="/squarespace_images/static_531766e3e4b00113dae821dc_53177f8de4b0bf4d7353b49f_54105d3fe4b0c1ca62ebcc3a_1410358593888__img.png" alt="">
-  
+
 
 <p> </p>
 <p><strong>A bit of history:</strong> <em>The title of this post was suggested by Simon Bond after James Martin, Antony Marcano and Andy Palmer's concerns that "Feature Injection" does not really represent what the practices mean. Hopefully it will help re-set the thinking about this subject a little bit, as I think the term represent something more obscure and complex in people's minds then it really should be. Note that most of the ideas discussed here are my understanding of the matter and not based in anything James, Anthony, Andy or Simon may think of it.</em></p>
