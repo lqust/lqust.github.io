@@ -46,7 +46,7 @@ html {
 }
 
 /* Rotate text 90 degreees */
-.rotate {
+.rotate a {
 
 	/* Safari */
 	-webkit-transform: rotate(-90deg);
