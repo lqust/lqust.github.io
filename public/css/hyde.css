@@ -45,6 +45,25 @@ html {
   }
 }
 
+/* Rotate text 90 degreees */
+.rotate {
+
+	/* Safari */
+	-webkit-transform: rotate(-90deg);
+
+	/* Firefox */
+	-moz-transform: rotate(-90deg);
+
+	/* IE */
+	-ms-transform: rotate(-90deg);
+
+	/* Opera */
+	-o-transform: rotate(-90deg);
+
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
 
 /*
  * Sidebar
@@ -58,6 +77,7 @@ html {
   padding: 2rem 1rem;
   color: rgba(255,255,255,.5);
   background-color: #202020;
+  
 }
 @media (min-width: 48em) {
   .sidebar {
