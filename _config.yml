@@ -19,3 +19,6 @@ author:
   url:            https://twitter.com/protolous
 
 paginate:         3
+
+gems:
+  - jekyll-feed
