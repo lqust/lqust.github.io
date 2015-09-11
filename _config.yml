@@ -22,3 +22,5 @@ paginate:         3
 
 gems:
   - jekyll-feed
+  - jekyll-redirect-from
+	
