@@ -10,7 +10,7 @@ permalink:        pretty
 title:            PROTOLOUS
 tagline:          'agilidade, tecnologia e sociedade'
 description:      ''
-url:              http://protolous.org
+url:              https://protolous.org
 baseurl:          /
 permalink:        blog/:year/:i_month/:i_day/:title
 
