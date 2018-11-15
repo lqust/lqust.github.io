@@ -11,7 +11,7 @@ title:            PROTOLOUS
 tagline:          'agilidade, tecnologia e sociedade'
 description:      ''
 url:              https://protolous.org
-baseurl:          /
+baseurl:          
 permalink:        blog/:year/:i_month/:i_day/:title
 
 author:
